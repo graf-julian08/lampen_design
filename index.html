@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Swipe Screens</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <div class="carousel" id="carousel">
+      
+      <!-- Screen 1 -->
+      <div class="screen" id="screen1">
+        <div class="clock" id="clock">00:00</div>
+      </div>
+
+      <!-- Screen 2 (Color Wheel) -->
+      <div class="screen" id="screen2">
+        <div class="color-wrapper">
+          <canvas id="wheel" width="320" height="320"></canvas>
+
+          <div class="controls">
+            <input id="brightness" type="range" min="0" max="100" value="100" />
+            <div class="color-info">
+              <div id="preview" class="preview"></div>
+              <input id="hex" class="hex" readonly />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="screen" id="screen3">3</div>
+      <div class="screen" id="screen4">4</div>
+    </div>
+
+    <div class="dots" id="dots"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
